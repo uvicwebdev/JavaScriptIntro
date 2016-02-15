@@ -1,6 +1,7 @@
-/*.container {
-    height: 98vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+#output {
+    font-size: 5vh;
+}
+
+#name {
+    color: #EB8174;
+}

@@ -62,6 +62,6 @@ btn.onclick = function() {
     console.log(secretname);
 
     var output = document.getElementById('output');
-    output.innerHTML = output.innerHTML + secretname;
+    output.innerHTML = "Wow, you secret name is <span id='name'>" + secretname + "</span>";
 
 }
