@@ -62,5 +62,6 @@ $('#btn').click(function() {
     console.log(data);
     $("#output").append("<br>Also I sent your data to a server via HTTP/POST, they can confirm, your secret name is " + data.form.name);
    }, "json");
+   return false;
 
 });
