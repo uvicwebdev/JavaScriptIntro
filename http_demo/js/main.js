@@ -1,4 +1,5 @@
-[
+
+var names = [
     "Carman Wardlow",
     "France Sirois",
     "Drew Presti",
@@ -17,15 +18,6 @@
     "Karrie Kerby",
     "Zita Sweeten",
     "Mabel Plunkett",
-    "Pa Curlee",
-    "Serena Hecht",
-    "Leopoldo Mccullough",
-    "Laureen Whitney",
-    "Lanelle Liefer",
-    "Danielle Mackiewicz",
-    "Trinity Mccutchen",
-    "Sallie Lerman",
-    "Nisha Poplar",
     "Micaela Vautour",
     "Elroy Kentner",
     "Thersa Wilkerson",
@@ -50,3 +42,25 @@
     "Bruno Zaragosa",
     "Cherryl Camarena"
 ]
+
+$('#btn').click(function() {
+    var name = $('#name').val();
+    var n = 0;
+    for (var i in name)
+        n += name.charCodeAt(i);
+    var secretname = names[n % names.length];
+    $('#output').empty().append(
+        "Wow, your secret name is <span id='nameText'>" + secretname + "</span>"
+    );
+
+    $.get('http://httpbin.org/ip', function (resp, err) {
+        console.log(resp);
+        $('#output').append("<br>Oh and also, I'm spying on you, your ip is: " + resp.origin);
+    });
+
+   $.post('http://httpbin.org/post', {name: secretname}, function(data){
+    console.log(data);
+    $("#output").append("<br>Also I sent your data to a server via HTTP/POST, they can confirm, your secret name is " + data.form.name);
+   }, "json");
+
+});
