@@ -64,4 +64,6 @@ btn.onclick = function() {
     var output = document.getElementById('output');
     output.innerHTML = "Wow, you secret name is <span id='name'>" + secretname + "</span>";
 
+    return false;
+
 }
