@@ -53,15 +53,14 @@ $('#btn').click(function() {
         "Wow, your secret name is <span id='nameText'>" + secretname + "</span>"
     );
 
-    $.get('http://httpbin.org/ip', function (resp, err) {
-        console.log(resp);
-        $('#output').append("<br>Oh and also, I'm spying on you, your ip is: " + resp.origin);
-    });
+    var ipURL = 'http://httpbin.org/ip';
 
-   $.post('http://httpbin.org/post', {name: secretname}, function(data){
-    console.log(data);
-    $("#output").append("<br>Also I sent your data to a server via HTTP/POST, they can confirm, your secret name is " + data.form.name);
-   }, "json");
-   return false;
+    /*
+        TODO: Do a get request with ipURL and do something cool with the result
+    */
+    var postURL = 'http://httpbin.org/post';
+    /*
+        TODO: POST the user's name to the postURL
+    */
 
 });

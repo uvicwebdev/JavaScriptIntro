@@ -1,9 +1,9 @@
-var logo = document.getElementById("logo");
+// TODO: get the dom element of the logo so we can use it later
 
 var width = window.innerWidth;
 var height = window.innerHeight;
 
-document.onmousemove = handleMouseMove;
+// TODO: attach handleMouseMove to the mouse move function of the document
 
 function handleMouseMove(event) {
     setTimeout(function() {

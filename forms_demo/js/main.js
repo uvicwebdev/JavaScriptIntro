@@ -42,21 +42,7 @@ var names = [
     "Cherryl Camarena"
 ]
 
-var btn = document.getElementById('btn')
-
-btn.onclick = function() {
-    var name = document.getElementById('name').value;
-    var n = 0;
-    for (var i in name) {
-        n += name.charCodeAt(i);
-    }
-    console.log(n);
-    var secretname = names[n % names.length];
-    console.log(secretname);
-
-    var output = document.getElementById('output');
-    output.innerHTML = "Wow, you secret name is <span id='name'>" + secretname + "</span>";
-
-    return false;
-
-}
+/* 
+    TODO: Write a function thats takes the user's name and appends a secret name
+          to the DOM.
+*/
