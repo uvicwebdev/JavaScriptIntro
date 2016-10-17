@@ -1,8 +1,3 @@
-
-// Some examples of how JS is asynchronous,
-// what do you think the print order is?
-setTimeout(function() {console.log(names)}, 1);
-
 var names = [
     "Carman Wardlow",
     "France Sirois",
@@ -46,8 +41,6 @@ var names = [
     "Bruno Zaragosa",
     "Cherryl Camarena"
 ]
-
-console.log("oh hey there");
 
 var btn = document.getElementById('btn')
 
