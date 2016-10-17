@@ -74,5 +74,9 @@ also checkout [WTFJS](https://www.youtube.com/watch?v=et8xNAc2ic8)
 
 ---
 
+# Asynchronous
+
+---
+
 # Lets code!
 

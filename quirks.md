@@ -16,6 +16,10 @@ Try these in a JS console
 [1] + []
 [1] + {}
 [] + ![]
+'1' == 1
+'1' === 1
+'1' - 1
+'1' + 1
 
 
 # Never everything you've been told is a lie
